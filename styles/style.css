@@ -2,12 +2,10 @@
     margin: 0; padding: 0; box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
-
 body {
     max-width: 1320px;
     margin: 0 auto;
 }
-
 header {
     padding: 30px 150px;
     background-color: rgba(255, 144, 14, 0.1);
@@ -24,33 +22,26 @@ header .navbar {
     position: sticky;
     top: 0; 
 }
-
 .navbar a {
     text-decoration: none;
 }
-
 .navbar .logo {
     width: 40%;
 }
-
 .navbar a.logo {
     color: #131313
 }
-
 .navbar .logo h2 {
     font-size: 45px;
 }
-
 .navbar #menu, .navbar label[for="menu"] {
     display: none;
 }
-
 .navbar nav {
     width: 30%;
     display: flex;
     justify-content: space-between;
 }
-
 .navbar nav a {
     color: #424242;
     font-weight: 700;
@@ -62,22 +53,18 @@ header .navbar {
 .banner {
     margin-top: 100px;
 }
-
 .banner .banner_description {
     text-align: center;
     margin-bottom: 25px;
 }
-
 .banner_description h1 {
     font-size: 3.5rem;
     margin-bottom: 25px;
 }
-
 .banner_description p {
     color: #727272;
     margin-bottom: 25px;
 }
-
 button.primary_btn {
     background-color: #FF900E;
     color: #FFF;
@@ -88,7 +75,6 @@ button.primary_btn {
     border-radius: 8px;
     cursor: pointer;
 }
-
 .banner_image img {
     width: 100%;
 }
@@ -102,34 +88,27 @@ button.primary_btn {
     align-items: center;
     padding: 75px 150px;
 }
-
 .feature_images, .feature_description {
     width: 47%;
 }
-
 .feature_images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
 }
-
 .feature_images img {
     width: 100%;
 }
-
 .feature_description h3 {
     font-size: 45px;
 }
-
 .feature_description h3 .light_text {
     font-weight: lighter;
     color: #727272;
 }
-
 .feature_description h3 .feature {
     color: #FF900E;
 }
-
 .feature_description p {
     margin: 20px 0;
     color: #727272;
@@ -144,62 +123,50 @@ button.primary_btn {
     align-items: center;
     padding: 75px 150px;
 }
-
 .architect_features_description, .architect_features_image {
     width: 46%;
 }
-
 .architect_features_description h3 {
     padding-left: 15px;
     position: relative;
     color: #131313;
     font-size: 45px;
 }
-
 .architect_features_description h3::before {
     content: ' ';
     height: 100%; width: 3px;
     background-color: #FF900E;
     position: absolute;
     top: 0; left: 0;
-
 }
-
 .architect_features_description > p {
     color: #727272;
     margin: 17px 0;
 }
-
 .architect_features_image img {
     width: 100%;
 }
-
 .features {
     display: grid; 
     gap: 15px;
     grid-template-columns: 1fr;
 }
-
 .features .feature {
     padding: 10px 15px;
     border-radius: 8px;
     box-shadow: 0 4px 4px 0 lightgray;
 }
-
 .feature h5 {
     font-size: 20px;
 }
-
 .feature p {
     color: #727272;
     margin-top: 8px;
     font-size: 14px;
 }
-
 .architect_features_image {
     position: relative;
 }
-
 .architect_features_image .experience_btn {
     width: 230px; height: 120px;
     outline: none; border: none;
@@ -209,11 +176,9 @@ button.primary_btn {
     position: absolute;
     bottom: -40px; left: -50px;
 }
-
 .experience_btn h4 {
     font-size: 45px;
 }
-
 .experience_btn p {
     font-size: 25px;
 }
@@ -232,7 +197,6 @@ button.primary_btn {
     margin: 20px 0 35px;
     color: #727272;
 }
-
 .facts_container .facts {
     display: flex;
     justify-content: space-between; align-items: center;
@@ -251,11 +215,9 @@ button.primary_btn {
 .fact:hover *{
     color: #FFF;
 }
-
 .fact h4 {
     margin: 10px 0;
 }
-
 .fact p {
     color: #727272;
     margin: 0 0 15px;
@@ -367,13 +329,24 @@ ________________________________________________________________________________
         width: 80%;
     }
 }
-@media only screen and (max-width: 1100px){
+
+/* 
+_________________________________________________________________________________________
+                        These styles for navbar logo handling
+-----------------------------------------------------------------------------------------
+*/
+@media only screen and (max-width: 1100px) {
     .navbar .logo {
         width: 60%;
     }
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 768px){
+/* 
+_________________________________________________________________________________________
+      These styles for handling 'experience' button in the device of 1100px to 768px
+-----------------------------------------------------------------------------------------
+*/
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
     .architect_features_image .experience_btn {
         width: 100%;
         position: static;
@@ -383,10 +356,21 @@ ________________________________________________________________________________
 
 /* 
 _________________________________________________________________________________________
+                        These styles for navbar logo handling
+-----------------------------------------------------------------------------------------
+*/
+@media only screen and (max-width: 1030px) {
+    .architect_features_container {
+        padding: 70px 130px;
+    }
+}
+
+/* 
+_________________________________________________________________________________________
                 These styles for small devices like normal android phone
 -----------------------------------------------------------------------------------------
 */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
     header {
         padding: 25px 70px;
     }
