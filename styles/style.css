@@ -298,9 +298,13 @@ footer {
 }
 
 /* 
-_________________________________________________________________________________________
-    These styles for some width, font-size and position in the device of 1100px width
------------------------------------------------------------------------------------------
+__________________________________________________________________________________________
+Some Simple Configurations according to the different devices created when website is open
+------------------------------------------------------------------------------------------
+*/
+
+/*
+=======================>1st configuration<=======================
 */
 @media only screen and (max-width: 1165px){
     .navbar .logo {
@@ -330,10 +334,8 @@ ________________________________________________________________________________
     }
 }
 
-/* 
-_________________________________________________________________________________________
-                        These styles for navbar logo handling
------------------------------------------------------------------------------------------
+/*
+=======================>2nd configuration<=======================
 */
 @media only screen and (max-width: 1100px) {
     .navbar .logo {
@@ -341,10 +343,8 @@ ________________________________________________________________________________
     }
 }
 
-/* 
-_________________________________________________________________________________________
-      These styles for handling 'experience' button in the device of 1100px to 768px
------------------------------------------------------------------------------------------
+/*
+=======================>3rd configuration<=======================
 */
 @media only screen and (max-width: 1100px) and (min-width: 768px) {
     .architect_features_image .experience_btn {
@@ -354,14 +354,61 @@ ________________________________________________________________________________
     }
 }
 
-/* 
-_________________________________________________________________________________________
-                        These styles for navbar logo handling
------------------------------------------------------------------------------------------
+/*
+=======================>4th configuration<=======================
 */
 @media only screen and (max-width: 1030px) {
+    .navbar .logo {
+        width: 50%;
+    }
+    .navbar nav {
+        width: 45%;
+    }
+    .navbar .logo h2 {
+        font-size: 38px;
+    }
     .architect_features_container {
-        padding: 70px 130px;
+        padding: 70px 100px;
+    }
+}
+
+/*
+=======================>5th configuration<=======================
+*/
+@media only screen and (max-width: 920px) {
+    header {
+        padding: 65px 110px;
+    }
+    .features_list_container {
+        flex-direction: column;
+    }
+    .features_list_container .feature_images, .features_list_container .feature_description {
+        width: 100%;
+    }
+    .features_list_container .feature_description {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .architect_features_container {
+        padding: 25px 70px;
+    }
+    .facts_container, .contact_container {
+        padding: 75px 100px;
+    }
+}
+
+/*
+=======================>6th configuration<=======================
+*/
+@media only screen and (max-width: 820px) and (min-width: 768px) {
+    .architect_features_description h5 {
+        font-size: 17px;
+    }
+    .architect_features_description p {
+        font-size: small;
+    }
+    .facts_container {
+        padding: 55px 80px;
     }
 }
 
@@ -429,7 +476,7 @@ ________________________________________________________________________________
 
     .feature_images {
         grid-template-columns: 1fr;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     .feature_images img {
@@ -457,13 +504,11 @@ ________________________________________________________________________________
     .facts .fact {
         margin: 12px 0;
     }
-
     .contact_container * {
         text-align: center;
     }
-
     .sponsors_container .sponsors img {
-        width: 30%;
+        width: 60%;
         margin: 20px 0;
     }
     footer {
